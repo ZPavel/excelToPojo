@@ -2,7 +2,7 @@
 
 ## Simple convertor from Excel xls/xlsx files to Java pojo class
 
-Having an xlsx extension file we want to parse in Java :
+Having an xls/xlsx extension file we want to parse in Java :
 
 | Id | Name | Manufactured | In Stock | Count | Categories | Unit Price | Last Updated |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -12,7 +12,7 @@ One of the most advanced and popular library for parsing Excel files in Java is 
 This library allows you to read this kind of files but doesn't provide a simple way to parse an xls/xlsx files to a Pojo class.
 
 ExcelToPojoUtils is simple utility class that can help you to fill this gap.
-It uses Apache Poi an Lombok library, generics and reflection to be the most flexible.
+It uses Apache Poi and Lombok libraries, generics and reflection to be the most flexible.
 
 ## To parse an Excel file and to get a list of pojos :
 
