@@ -12,14 +12,52 @@ One of the most advanced and popular library for parsing Excel files in Java is 
 This library allows you to read this kind of files but doesn't provide a simple way to parse an xls/xlsx files to a Pojo class.
 
 ExcelToPojoUtils is simple utility class that can help you to fill this gap.
-It uses Apache Poi library, generics and reflection to be the most flexible.
+It uses Apache Poi an Lombok library, generics and reflection to be the most flexible.
 
-## To parse an Excel file and to get a list of pojos just do :
+## To parse an Excel file and to get a list of pojos :
+
+### First create a pojo class you would get :
+
+```
+@Data
+@NoArgsConstructor
+public class Pojo {
+  private Long id;
+	private String name;
+	private LocalDate manufactured;
+	private Boolean inStock;
+	private Integer count;
+	private List<String> categories;
+	private BigDecimal unitPrice;
+	private LocalDateTime lastUpdated;
+}
+```
+The field names of your pojo should use camel case. If needed it could be changed by modifying strToFieldName method.
+
+Only these types are managed :
+- Long
+- String
+- LocalDate
+- LocalDateTime
+- Boolean
+- Integer
+- List
+- BigDecimal
+
+The boolean flag to true in cell is : 1
+The list separator is : ,
+
+These two could be changed to your convenience.
+
 
 ```
 InputStream is = this.getClass().getResourceAsStream("/ExcelUtilsTest.xlsx");
 List<Pojo> pojos = ExcelToPojoUtils.toPojo(Pojo.class, is);
 ```
+
+These types can be parsed :
+public static final String BOOLEAN_TRUE = "1";
+    public static final String LIST_SEPARATOR = ",";
 
 Here is the unit test in ExcelToPojoUtilsTest class : 
 
