@@ -48,14 +48,12 @@ The boolean flag to true in cell is : "1". The list separator is : ",".
 These two could be changed to your convenience.
 
 
+Then you call ExcelToPojoUtils toPojo static method and it's done :
+
 ```
 InputStream is = this.getClass().getResourceAsStream("/ExcelUtilsTest.xlsx");
 List<Pojo> pojos = ExcelToPojoUtils.toPojo(Pojo.class, is);
 ```
-
-These types can be parsed :
-public static final String BOOLEAN_TRUE = "1";
-    public static final String LIST_SEPARATOR = ",";
 
 Here is the unit test in ExcelToPojoUtilsTest class : 
 
