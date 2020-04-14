@@ -8,10 +8,10 @@ Having an xlsx extension file we want to parse in Java :
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Tennis balls | 2020-05-01 | 1 | 4 | Sports, Leisure | 5.55 | 2020-05-01T12:00:00 |
 
-One a most advanced and popular library for parsing Excel files in Java is Apache Poi.
+One of the most advanced and popular library for parsing Excel files in Java is Apache Poi.
 This library allows you to read this kind of files but doesn't provide a simple way to parse an xls/xlsx files to a Pojo class.
 
-ExcelToPojoUtils is simple utility class that can help you to do it.
+ExcelToPojoUtils is simple utility class that can help you to fill this gap.
 It uses Apache Poi library, generics and reflection to be the most flexible.
 
 ## To parse an Excel file and to get a list of pojos just do :
