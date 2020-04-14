@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -24,8 +25,9 @@ public class ExcelToPojoUtilsTest {
         assertEquals(pojo.getName(), "Tennis balls");
         assertEquals(pojo.getManufactured(), LocalDate.of(2020, 5, 1));
         assertEquals(pojo.getInStock(), Boolean.TRUE);
-        assertEquals(pojo.getCount(), 100);
+        assertEquals(pojo.getCount(), 4);
         assertEquals(pojo.getCategories(), Arrays.asList("Sports", "Leisure"));
+        assertEquals(pojo.getUnitPrice(), new BigDecimal("5.55"));
         assertEquals(pojo.getLastUpdated(), LocalDateTime.of(2020, 5, 1, 12, 0, 0));
     }
 
@@ -38,6 +40,7 @@ public class ExcelToPojoUtilsTest {
         private Boolean inStock;
         private Integer count;
         private List<String> categories;
+        private BigDecimal unitPrice;
         private LocalDateTime lastUpdated;
     }
 }

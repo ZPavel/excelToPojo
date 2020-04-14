@@ -5,6 +5,7 @@ import org.apache.poi.ss.usermodel.*;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -61,6 +62,8 @@ public class ExcelToPojoUtils {
                                     value = LocalDateTime.parse(strValue);
                                 } else if (field.getType().equals(Boolean.class)) {
                                     value = BOOLEAN_TRUE.equals(strValue);
+                                } else if (field.getType().equals(BigDecimal.class)) {
+                                    value = new BigDecimal(strValue);
                                 } else if (field.getType().equals(List.class)) {
                                     value = Arrays.asList(strValue.trim().split("\\s*" + LIST_SEPARATOR + "\\s*"));
                                 }
