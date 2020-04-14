@@ -44,9 +44,7 @@ Only these types are managed :
 - List
 - BigDecimal
 
-The boolean flag to true in cell is : 1
-The list separator is : ,
-
+The boolean flag to true in cell is : "1". The list separator is : ",".
 These two could be changed to your convenience.
 
 
