@@ -1,6 +1,6 @@
 # excelToPojo
 
-Simple convertor from Excel xlsx file to Java pojo class
+## Simple convertor from Excel xlsx file to Java pojo class
 
 Having an xlsx extension file we want to parse in Java :
 
