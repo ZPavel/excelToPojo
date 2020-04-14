@@ -4,8 +4,8 @@ Simple convertor from Excel xlsx file to Java pojo class
 
 Having an xlsx extension file we want to parse in Java :
 
-|Id|Name|Manufactured|In Stock|Count|Categories|Unit Price|Last Updated|
-|1|Tennis balls|2020-05-01|1|4|Sports, Leisure|5.55|2020-05-01T12:00:00|
+|Id|Name        |Manufactured|In Stock|Count|Categories     |Unit Price|Last Updated       |
+|1 |Tennis balls|2020-05-01  |1       |4    |Sports, Leisure|5.55      |2020-05-01T12:00:00|
 
 One a most advanced and popular library for parsing Excel files in Java is Apache Poi.
 This library allows you to read this kind of files but doesn't provide a simple way to parse an xls/xlsx files to a Pojo class.
