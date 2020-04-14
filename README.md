@@ -14,7 +14,7 @@ This library allows you to read this kind of files but doesn't provide a simple 
 ExcelToPojoUtils is simple utility class that can help you to fill this gap.
 It uses Apache Poi and Lombok libraries, generics and reflection to be the most flexible.
 
-## To parse an Excel file and to get a list of pojos :
+## To parse an Excel file and get a list of pojos :
 
 ### First create a pojo class you would get :
 
