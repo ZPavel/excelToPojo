@@ -22,7 +22,7 @@ It uses Apache Poi an Lombok library, generics and reflection to be the most fle
 @Data
 @NoArgsConstructor
 public class Pojo {
-  private Long id;
+	private Long id;
 	private String name;
 	private LocalDate manufactured;
 	private Boolean inStock;
