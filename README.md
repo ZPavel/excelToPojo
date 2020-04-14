@@ -48,7 +48,7 @@ The boolean flag to true in cell is : "1". The list separator is : ",".
 These two could be changed to your convenience.
 
 
-Then you call ExcelToPojoUtils toPojo static method and it's done :
+Then call ExcelToPojoUtils toPojo static method and it's done :
 
 ```
 InputStream is = this.getClass().getResourceAsStream("/ExcelUtilsTest.xlsx");
